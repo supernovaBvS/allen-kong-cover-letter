@@ -28,22 +28,22 @@ an ideal candidate for the position.\n\nI am excited by the opportunity to contr
 like to develop my career path in Datago and grow with your team. I would welcome the opportunity to further discuss my \
 qualifications for this position with you.\n\nSincerely,\n\nAllen Kong\n\nEnclosure: Resume'
 
-    mail= mail.replace('Datago', cname)
-    return mail
+    cl= mail.replace('Datago', cname)
+    return cl
 
 
-def writemail(mail):    
+def writemail(cl):    
     ''' path = 'output.txt' '''
 
     path = '/Users/dev/Documents/cv/output.txt'
     with open(path, 'w') as f:
-        f.write(mail)
+        f.write(cl)
 
 
 def main():
-    mail = jobmail('Mayer Brown', 'junior data engineer')
-    writemail(mail)
-    print('mail created successfully')
+    cl = jobmail('Mayer Brown', 'junior data engineer')
+    writemail(cl)
+    print('cover letter created successfully')
 
 
 if __name__ == "__main__":
